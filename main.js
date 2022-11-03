@@ -15,7 +15,7 @@ addTask.onclick=function(){
         <div class="task">
            ${input.value}    
             <div class="button2">
-            <img src="/images/Group 56.png">
+            <img src="images/Group 56.png">
            
         </div>
         </div>
