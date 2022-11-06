@@ -33,7 +33,12 @@ addTask.onclick=function(){
   }
 input.addEventListener("keyup", function (e) {
     if (e.keyCode === 13) {
-        addItem();
+        if(input.value.length==0){
+            alert("Xana boş buraxıla bilməz")
+        }
+        else{
+          addItem();
+        } 
     }
 });
 
@@ -42,6 +47,7 @@ input.addEventListener("keyup", function (e) {
      let taskSort = [...document.querySelectorAll(".lists .task")]
       .map((task) => task.innerHTML)
       .sort();
+      
        
      
     if (boolean) {
